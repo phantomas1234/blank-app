@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+st.title("🎈 URL params demo")
+screening_report_id = st.query_params.get("screening_report_id")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Screening report ID: {}".format(screening_report_id)
 )
